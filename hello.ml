@@ -112,5 +112,9 @@ let y = ref 10
    ensure the expression has type unit.
 *)
 let () =
-  y := 20;                              (* mutation, returns unit *)
+  y := 20;                              (* mutation, an expression with a type, returns unit; 
+                                        unlike java assignment statement has no type *)
+                                        
   Printf.printf "y = %d\n" !y           (* dereference and print *)
+
+
